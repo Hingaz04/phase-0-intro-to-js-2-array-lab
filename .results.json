@@ -2,12 +2,12 @@
   "stats": {
     "suites": 11,
     "tests": 9,
-    "passes": 5,
+    "passes": 7,
     "pending": 0,
-    "failures": 4,
-    "start": "2023-09-20T14:33:17.610Z",
-    "end": "2023-09-20T14:33:18.046Z",
-    "duration": 436
+    "failures": 2,
+    "start": "2023-09-24T10:37:47.213Z",
+    "end": "2023-09-24T10:37:47.646Z",
+    "duration": 433
   },
   "tests": [
     {
@@ -41,49 +41,49 @@
     {
       "title": "removes the first cat from the cats array",
       "fullTitle": "index.js Array functions destructivelyRemoveFirstCat() removes the first cat from the cats array",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "appends a cat to the cats array and returns a new array, leaving the cats array unchanged",
       "fullTitle": "index.js Array functions appendCat(name) appends a cat to the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: appendCat is not defined\n    at Context.<anonymous> (test/indexTest.js:51:9)\n    at process.processImmediate (node:internal/timers:476:21)",
-        "message": "appendCat is not defined"
+        "message": "expected [ Array(4) ] to have the same ordered members as [ 'Milo', 'Otis', 'Garfield', 'Broom' ]",
+        "showDiff": true,
+        "actual": "[\n  \"Milo\"\n  \"Otis\"\n  \"Garfield\"\n  {\n    \"name\": \"Broom\"\n  }\n]",
+        "expected": "[\n  \"Milo\"\n  \"Otis\"\n  \"Garfield\"\n  \"Broom\"\n]",
+        "stack": "AssertionError: expected [ Array(4) ] to have the same ordered members as [ 'Milo', 'Otis', 'Garfield', 'Broom' ]\n    at Context.<anonymous> (test/indexTest.js:51:52)\n    at process.processImmediate (node:internal/timers:476:21)"
       }
     },
     {
       "title": "prepends a cat to the cats array and returns a new array, leaving the cats array unchanged",
       "fullTitle": "index.js Array functions prependCat(name) prepends a cat to the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: prependCat is not defined\n    at Context.<anonymous> (test/indexTest.js:59:9)\n    at process.processImmediate (node:internal/timers:476:21)",
-        "message": "prependCat is not defined"
+        "message": "expected [ Array(4) ] to have the same ordered members as [ Array(4) ]",
+        "showDiff": true,
+        "actual": "[\n  {\n    \"name\": \"Arnold\"\n  }\n  \"Milo\"\n  \"Otis\"\n  \"Garfield\"\n]",
+        "expected": "[\n  \"Arnold\"\n  \"Milo\"\n  \"Otis\"\n  \"Garfield\"\n]",
+        "stack": "AssertionError: expected [ Array(4) ] to have the same ordered members as [ Array(4) ]\n    at Context.<anonymous> (test/indexTest.js:59:54)\n    at process.processImmediate (node:internal/timers:476:21)"
       }
     },
     {
       "title": "removes the last cat in the cats array and returns a new array, leaving the cats array unchanged",
       "fullTitle": "index.js Array functions removeLastCat() removes the last cat in the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: removeLastCat is not defined\n    at Context.<anonymous> (test/indexTest.js:67:9)\n    at process.processImmediate (node:internal/timers:476:21)",
-        "message": "removeLastCat is not defined"
-      }
+      "err": {}
     },
     {
       "title": "removes the first cat from the cats array and returns a new array, leaving the cats array unchanged",
       "fullTitle": "index.js Array functions removeFirstCat() removes the first cat from the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: removeFirstCat is not defined\n    at Context.<anonymous> (test/indexTest.js:75:9)\n    at process.processImmediate (node:internal/timers:476:21)",
-        "message": "removeFirstCat is not defined"
-      }
+      "err": {}
     }
   ],
   "pending": [],
@@ -91,41 +91,27 @@
     {
       "title": "appends a cat to the cats array and returns a new array, leaving the cats array unchanged",
       "fullTitle": "index.js Array functions appendCat(name) appends a cat to the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: appendCat is not defined\n    at Context.<anonymous> (test/indexTest.js:51:9)\n    at process.processImmediate (node:internal/timers:476:21)",
-        "message": "appendCat is not defined"
+        "message": "expected [ Array(4) ] to have the same ordered members as [ 'Milo', 'Otis', 'Garfield', 'Broom' ]",
+        "showDiff": true,
+        "actual": "[\n  \"Milo\"\n  \"Otis\"\n  \"Garfield\"\n  {\n    \"name\": \"Broom\"\n  }\n]",
+        "expected": "[\n  \"Milo\"\n  \"Otis\"\n  \"Garfield\"\n  \"Broom\"\n]",
+        "stack": "AssertionError: expected [ Array(4) ] to have the same ordered members as [ 'Milo', 'Otis', 'Garfield', 'Broom' ]\n    at Context.<anonymous> (test/indexTest.js:51:52)\n    at process.processImmediate (node:internal/timers:476:21)"
       }
     },
     {
       "title": "prepends a cat to the cats array and returns a new array, leaving the cats array unchanged",
       "fullTitle": "index.js Array functions prependCat(name) prepends a cat to the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: prependCat is not defined\n    at Context.<anonymous> (test/indexTest.js:59:9)\n    at process.processImmediate (node:internal/timers:476:21)",
-        "message": "prependCat is not defined"
-      }
-    },
-    {
-      "title": "removes the last cat in the cats array and returns a new array, leaving the cats array unchanged",
-      "fullTitle": "index.js Array functions removeLastCat() removes the last cat in the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: removeLastCat is not defined\n    at Context.<anonymous> (test/indexTest.js:67:9)\n    at process.processImmediate (node:internal/timers:476:21)",
-        "message": "removeLastCat is not defined"
-      }
-    },
-    {
-      "title": "removes the first cat from the cats array and returns a new array, leaving the cats array unchanged",
-      "fullTitle": "index.js Array functions removeFirstCat() removes the first cat from the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: removeFirstCat is not defined\n    at Context.<anonymous> (test/indexTest.js:75:9)\n    at process.processImmediate (node:internal/timers:476:21)",
-        "message": "removeFirstCat is not defined"
+        "message": "expected [ Array(4) ] to have the same ordered members as [ Array(4) ]",
+        "showDiff": true,
+        "actual": "[\n  {\n    \"name\": \"Arnold\"\n  }\n  \"Milo\"\n  \"Otis\"\n  \"Garfield\"\n]",
+        "expected": "[\n  \"Arnold\"\n  \"Milo\"\n  \"Otis\"\n  \"Garfield\"\n]",
+        "stack": "AssertionError: expected [ Array(4) ] to have the same ordered members as [ Array(4) ]\n    at Context.<anonymous> (test/indexTest.js:59:54)\n    at process.processImmediate (node:internal/timers:476:21)"
       }
     }
   ],
@@ -161,6 +147,20 @@
     {
       "title": "removes the first cat from the cats array",
       "fullTitle": "index.js Array functions destructivelyRemoveFirstCat() removes the first cat from the cats array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "removes the last cat in the cats array and returns a new array, leaving the cats array unchanged",
+      "fullTitle": "index.js Array functions removeLastCat() removes the last cat in the cats array and returns a new array, leaving the cats array unchanged",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "removes the first cat from the cats array and returns a new array, leaving the cats array unchanged",
+      "fullTitle": "index.js Array functions removeFirstCat() removes the first cat from the cats array and returns a new array, leaving the cats array unchanged",
       "duration": 1,
       "currentRetry": 0,
       "err": {}
